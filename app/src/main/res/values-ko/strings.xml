@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">크립토</string>
+    <string name="join">회원 가입</string>
+    <string name="id">아이디</string>
+    <string name="password">패스워드</string>
+    <string name="password_confirm">패스워드 확인</string>
+    <string name="passwors_do_not_match">패스워드가 일치하지 않습니다.</string>
+    <string name="error_length_of_id">아이디 길이가 8자 이상 넘어야합니다.</string>
+    <string name="error_length_of_password">패스워드 길이가 8자 이상 넘어야합니다.</string>
+    <string name="error_already_registered_id">이미 등록된 아이디입니다.</string>
+    <string name="error_id_include_only_letter_and_number">ID에 오직 문자와 숫자만 포함되어야합니다.</string>
+    <string name="error_password_include_not_letter_or_number_or_special_letter">패스워드에 문자 또는 숫자, 특수문자가 꼭 포함되어야 합니다.</string>
+</resources>

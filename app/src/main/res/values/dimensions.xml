@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_subject_text_size">20dp</dimen>
+    <dimen name="activity_subject_all_padding">20dp</dimen>
+    <dimen name="activity_padding_start_end">20dp</dimen>
+    <dimen name="join_container_inner_all_padding">20dp</dimen>
+    <dimen name="join_edittext_text_size">15dp</dimen>
+    <dimen name="join_vertical_space_padding">10dp</dimen>
+    <dimen name="join_button_layout_start_end_margin">20dp</dimen>
+    <dimen name="join_guide_text_size">12dp</dimen>
+</resources>

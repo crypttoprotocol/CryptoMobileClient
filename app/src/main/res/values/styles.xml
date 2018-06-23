@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActivitySubjectStyle">
+        <item name="android:padding">@dimen/activity_subject_all_padding</item>
+        <item name="android:textSize">@dimen/activity_subject_text_size</item>
+        <item name="android:textColor">@color/default_black_color</item>
+    </style>
+
+    <style name="JoinIdEditText">
+        <item name="android:padding">@dimen/activity_subject_all_padding</item>
+        <item name="android:textSize">@dimen/activity_subject_text_size</item>
+        <item name="android:textColor">@color/default_black_color</item>
+    </style>
+
+
+</resources>
