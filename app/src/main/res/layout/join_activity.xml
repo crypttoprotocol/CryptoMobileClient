@@ -3,14 +3,16 @@
     <data>
         <variable name="viewmodel" type="com.crypto.mobile.client.viewmodel.JoinViewModel" />
         <variable name="callback" type="com.crypto.mobile.client.activity.JoinActivity.UICallback" />
-        <variable name="guide" type="com.crypto.mobile.client.data.GuideStringInJoin" />
+        <variable name="guide" type="com.crypto.mobile.client.viewdata.GuideStringInJoin" />
     </data>
     <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/activity_background"
         android:paddingStart="@dimen/activity_padding_start_end"
         android:paddingEnd="@dimen/activity_padding_start_end"
+        tools:context="com.crypto.mobile.client.activity.JoinActivity"
         >
 
         <TextView
@@ -33,6 +35,7 @@
                 android:background="@drawable/default_container_background"
                 android:padding="@dimen/join_container_inner_all_padding">
                 <EditText
+                    android:id="@+id/id_et"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_marginBottom="@dimen/join_vertical_space_padding"
@@ -42,25 +45,30 @@
                     android:onTextChanged="@{viewmodel::onChangedID}"
                     />
                 <EditText
+                    android:id="@+id/password_et"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_marginBottom="@dimen/join_vertical_space_padding"
                     android:hint="@string/password"
                     android:textSize="@dimen/join_edittext_text_size"
                     android:textAlignment="textStart"
+                    android:inputType="textPassword"
                     android:onTextChanged="@{viewmodel::onChangedPassword}"
                     />
                 <EditText
+                    android:id="@+id/password_confirmed_et"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_marginBottom="@dimen/join_vertical_space_padding"
                     android:hint="@string/password_confirm"
                     android:textSize="@dimen/join_edittext_text_size"
                     android:textAlignment="textStart"
+                    android:inputType="textPassword"
                     android:onTextChanged="@{viewmodel::onChangedPasswordConfirmed}"
                     />
             </LinearLayout>
             <Button
+                android:id="@+id/join_bt"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="@string/join"

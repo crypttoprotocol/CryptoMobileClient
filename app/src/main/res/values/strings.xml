@@ -1,15 +1,18 @@
 
 <resources>
     <string name="app_name">Crypto</string>
+    <string name="blank"></string>
     <string name="join">Join</string>
     <string name="id">ID</string>
-    <string name="password">PASSWORD</string>
+    <string name="password">Password</string>
     <string name="password_confirm">PASSWORD CONFIRM</string>
-    <string name="passwors_do_not_match">The Passwords do no match.</string>
-    <string name="error_length_of_id">The length of the ID must be at least 8 characters.</string>
+    <string name="error_id_empty">Please input your id.</string>
+    <string name="error_id_size">The length of the ID must be at least 8 characters.</string>
+    <string name="error_id_include_only_letter_and_number">The ID should include only letters and number.</string>
+    <string name="error_password_empty">please input your password.</string>
     <string name="error_length_of_password">The length of the Password must be at least 8 characters.</string>
-    <string name="error_already_registered_id">It is already registered ID.</string>
-    <string name="error_id_include_only_letter_and_number">The ID must contain only letters and numbers.</string>
     <string name="error_password_include_not_letter_or_number_or_special_letter">The Passwords must contain a letter, a number, and a special character.</string>
+    <string name="error_password_do_not_match">The Passwords do no match.</string>
 
+    <string name="error_already_registered_id">It is already registered ID.</string>
 </resources>
