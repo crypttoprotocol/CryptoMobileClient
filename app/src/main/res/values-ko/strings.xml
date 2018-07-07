@@ -13,6 +13,10 @@
     <string name="error_length_of_password">패스워드 길이가 8자 이상 넘어야합니다.</string>
     <string name="error_password_include_not_letter_or_number_or_special_letter">패스워드에 문자 또는 숫자, 특수문자가 꼭 포함되어야 합니다.</string>
     <string name="error_password_do_not_match">패스워드가 일치하지 않습니다.</string>
-
     <string name="error_already_registered_id">이미 등록된 아이디입니다.</string>
+
+    <string name="login">로그인</string>
+    <string name="gmail_login">Gmail 로그인</string>
+
+
 </resources>

@@ -13,6 +13,8 @@
     <string name="error_length_of_password">The length of the Password must be at least 8 characters.</string>
     <string name="error_password_include_not_letter_or_number_or_special_letter">The Passwords must contain a letter, a number, and a special character.</string>
     <string name="error_password_do_not_match">The Passwords do no match.</string>
-
     <string name="error_already_registered_id">It is already registered ID.</string>
+
+    <string name="login">Login</string>
+    <string name="gmail_login">Gmail Login</string>
 </resources>

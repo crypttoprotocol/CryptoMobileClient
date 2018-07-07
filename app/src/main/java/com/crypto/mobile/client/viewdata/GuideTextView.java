@@ -1,8 +1,8 @@
 package com.crypto.mobile.client.viewdata;
 
-public class GuideStringInJoin {
+public class GuideTextView {
     public String mGuideText;
-    public GuideStringInJoin(String guide) {
+    public GuideTextView(String guide) {
         mGuideText = guide;
     }
     public void setGuideText(String guide) {

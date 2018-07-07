@@ -11,10 +11,10 @@ import android.text.Spanned;
 import android.view.View;
 
 import com.crypto.mobile.client.R;
-import com.crypto.mobile.client.viewdata.GuideStringInJoin;
-import com.crypto.mobile.client.databinding.JoinActivityBinding;
+import com.crypto.mobile.client.databinding.ActivityJoinBinding;
+import com.crypto.mobile.client.utility.TextUtil;
+import com.crypto.mobile.client.viewdata.GuideTextView;
 import com.crypto.mobile.client.viewmodel.JoinViewModel;
-import com.crypto.mobile.client.data.JoinInfoData;
 
 import java.util.regex.Pattern;
 
@@ -22,16 +22,13 @@ import java.util.regex.Pattern;
 public class JoinActivity extends AppCompatActivity {
     JoinViewModel mJoinViewModel;
 
-    JoinActivityBinding mJoinActivityBinding;
+    ActivityJoinBinding mJoinActivityBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mJoinActivityBinding = DataBindingUtil.setContentView(this, R.layout.join_activity);
+        mJoinActivityBinding = DataBindingUtil.setContentView(this, R.layout.activity_join);
         mJoinViewModel = ViewModelProviders.of(this).get(JoinViewModel.class);
 
-        mJoinActivityBinding.setViewmodel(mJoinViewModel);
-        mJoinActivityBinding.setCallback(new UICallback());
-        mJoinActivityBinding.idEt.setFilters(new InputFilter[] {filterAlphaNum});
 
 
         mJoinViewModel.getGuideCode().observe(this, mGuideCodeObserver);
@@ -49,13 +46,13 @@ public class JoinActivity extends AppCompatActivity {
         @Override
         public void onChanged(@Nullable final Integer guideCode) {
             android.util.Log.d("dong", "GuideCodeObserver guideCode = " + guideCode );
-            String guideText = getString(JoinInfoData.getErrorStringId(guideCode));
-            if(guideCode == JoinInfoData.NO_ERROR) {
+            String guideText = getString(TextUtil.getErrorStringId(guideCode));
+            if(guideCode == TextUtil.NO_ERROR) {
                 mJoinActivityBinding.joinBt.setEnabled(true);
             } else {
                 mJoinActivityBinding.joinBt.setEnabled(false);
             }
-            mJoinActivityBinding.setGuide(new GuideStringInJoin(guideText));
+            mJoinActivityBinding.setGuide(new GuideTextView(guideText));
         }
     };
 
